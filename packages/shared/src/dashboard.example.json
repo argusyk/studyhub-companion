@@ -1,0 +1,32 @@
+{
+  "group": "ki-21",
+  "labs": [
+    {"number": 1, "title": "Git і гілки"},
+    {"number": 2, "title": "SQL-запити"},
+    {"number": 3, "title": "REST API на FastAPI"},
+    {"number": 4, "title": "Тестування pytest"}
+  ],
+  "rows": [
+    {"student": "Іваненко О. П.", "cells": [
+      {"labNumber": 1, "score": 95, "status": "reviewed", "isLate": false},
+      {"labNumber": 2, "score": 88, "status": "reviewed", "isLate": false},
+      {"labNumber": 3, "score": 76, "status": "reviewed", "isLate": false},
+      {"labNumber": 4, "score": 56, "status": "reviewed", "isLate": true}]},
+    {"student": "Шевченко А. І.", "cells": [
+      {"labNumber": 1, "score": 82, "status": "reviewed", "isLate": false},
+      {"labNumber": 2, "score": 74, "status": "reviewed", "isLate": false},
+      {"labNumber": 3, "score": 63, "status": "reviewed", "isLate": true},
+      {"labNumber": 4, "score": null, "status": "missing", "isLate": false}]},
+    {"student": "Коваль М. О.", "cells": [
+      {"labNumber": 1, "score": 100, "status": "reviewed", "isLate": false},
+      {"labNumber": 2, "score": 91, "status": "reviewed", "isLate": false},
+      {"labNumber": 3, "score": 85, "status": "reviewed", "isLate": false},
+      {"labNumber": 4, "score": 79, "status": "reviewed", "isLate": false}]},
+    {"student": "Бондаренко Д. С.", "cells": [
+      {"labNumber": 1, "score": 60, "status": "reviewed", "isLate": false},
+      {"labNumber": 2, "score": null, "status": "returned", "isLate": false},
+      {"labNumber": 3, "score": null, "status": "missing", "isLate": false},
+      {"labNumber": 4, "score": null, "status": "missing", "isLate": false}]}
+  ],
+  "stats": {"average": 78.5, "submitted": 14, "total": 16, "late": 3}
+}

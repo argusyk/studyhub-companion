@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+  <title>Макет: дашборд викладача StudyHub</title>
+  <desc>Токени: фон #f6f7fb, картка #ffffff, акцент #2f5bea, успіх #1f9d55, увага #d97706, помилка #dc2626, текст #1b1f2a, приглушений #5b6275. Відступи 8/16/24 px, радіус 8 px.</desc>
+  <rect width="960" height="600" fill="#f6f7fb"/>
+  <rect width="960" height="56" fill="#ffffff"/>
+  <text x="24" y="36" font-size="20" font-weight="700" fill="#2f5bea">StudyHub</text>
+  <text x="140" y="35" font-size="14" fill="#5b6275">Дашборд викладача · група КІ-21</text>
+  <circle cx="924" cy="28" r="14" fill="#2f5bea"/>
+
+  <!-- stat cards -->
+  <g>
+    <rect x="24" y="80" width="296" height="96" rx="8" fill="#ffffff" stroke="#e3e6ef"/>
+    <text x="40" y="108" font-size="13" fill="#5b6275">Середній бал групи</text>
+    <text x="40" y="150" font-size="34" font-weight="700" fill="#1b1f2a">78,5</text>
+    <rect x="332" y="80" width="296" height="96" rx="8" fill="#ffffff" stroke="#e3e6ef"/>
+    <text x="348" y="108" font-size="13" fill="#5b6275">Здано робіт</text>
+    <text x="348" y="150" font-size="34" font-weight="700" fill="#1f9d55">14 / 16</text>
+    <rect x="640" y="80" width="296" height="96" rx="8" fill="#ffffff" stroke="#e3e6ef"/>
+    <text x="656" y="108" font-size="13" fill="#5b6275">Із запізненням</text>
+    <text x="656" y="150" font-size="34" font-weight="700" fill="#d97706">3</text>
+  </g>
+
+  <!-- table -->
+  <rect x="24" y="200" width="912" height="368" rx="8" fill="#ffffff" stroke="#e3e6ef"/>
+  <text x="40" y="232" font-size="16" font-weight="700" fill="#1b1f2a">Оцінки за лабораторними</text>
+  <g font-size="13" fill="#5b6275" font-weight="600">
+    <text x="40" y="266">Студент</text>
+    <text x="360" y="266">ЛР1</text>
+    <text x="500" y="266">ЛР2</text>
+    <text x="640" y="266">ЛР3</text>
+    <text x="780" y="266">ЛР4</text>
+  </g>
+  <line x1="40" y1="276" x2="920" y2="276" stroke="#e3e6ef"/>
+  <g font-size="14" fill="#1b1f2a">
+    <text x="40" y="308">Іваненко О. П.</text>
+    <text x="360" y="308">95</text><text x="500" y="308">88</text><text x="640" y="308">76</text>
+    <rect x="772" y="291" width="86" height="24" rx="12" fill="#fef3c7"/>
+    <text x="786" y="308" font-size="12" fill="#d97706">Запізно: 56</text>
+    <text x="40" y="348">Шевченко А. І.</text>
+    <text x="360" y="348">82</text><text x="500" y="348">74</text>
+    <rect x="632" y="333" width="86" height="24" rx="12" fill="#fef3c7"/>
+    <text x="646" y="348" font-size="12" fill="#d97706">Запізно: 63</text>
+    <rect x="772" y="333" width="86" height="24" rx="12" fill="#e5e7eb"/>
+    <text x="790" y="348" font-size="12" fill="#5b6275">Не здано</text>
+    <text x="40" y="388">Коваль М. О.</text>
+    <text x="360" y="388">100</text><text x="500" y="388">91</text><text x="640" y="388">85</text><text x="780" y="388">79</text>
+    <text x="40" y="428">Бондаренко Д. С.</text>
+    <text x="360" y="428">60</text>
+    <rect x="492" y="413" width="86" height="24" rx="12" fill="#fee2e2"/>
+    <text x="508" y="428" font-size="12" fill="#dc2626">Повернено</text>
+    <rect x="632" y="413" width="86" height="24" rx="12" fill="#e5e7eb"/>
+    <text x="650" y="428" font-size="12" fill="#5b6275">Не здано</text>
+    <rect x="772" y="413" width="86" height="24" rx="12" fill="#e5e7eb"/>
+    <text x="790" y="428" font-size="12" fill="#5b6275">Не здано</text>
+  </g>
+  <text x="40" y="470" font-size="12" fill="#5b6275">Найближчий дедлайн: ЛР5 · 19.04.2026 23:59 (Київ) · залишилось 3 дні</text>
+  <rect x="40" y="490" width="160" height="40" rx="8" fill="#2f5bea"/>
+  <text x="62" y="515" font-size="14" font-weight="600" fill="#ffffff">Експорт у CSV</text>
+  <text x="40" y="556" font-size="11" fill="#5b6275">Макет навчальний: вигадані студенти й дані. Статуси: Здано / Запізно / Повернено / Не здано.</text>
+</svg>
