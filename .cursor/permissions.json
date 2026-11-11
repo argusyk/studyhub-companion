@@ -1,0 +1,8 @@
+{
+  "autoRun": {
+    "block_instructions": [
+      "Every command that touches the production database should go through approval first.",
+      "Every command that deletes files outside the build directories should go through approval first."
+    ]
+  }
+}

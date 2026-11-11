@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "studyhub-db": {
+      "command": "uvx",
+      "args": ["postgres-mcp==0.3.0", "--access-mode=restricted"],
+      "env": {
+        "DATABASE_URI": "${env:STUDYHUB_RO_DATABASE_URL}"
+      }
+    },
+    "studyhub-schedule": {
+      "command": "python",
+      "args": ["${workspaceFolder}/tools/schedule_mcp/server.py"]
+    }
+  }
+}

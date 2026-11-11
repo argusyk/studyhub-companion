@@ -4,6 +4,15 @@
     "afterFileEdit": [
       { "command": "python .cursor/hooks/format.py", "timeout": 20 }
     ],
+    "beforeShellExecution": [
+      { "command": "python .cursor/hooks/guard_shell.py", "timeout": 5, "failClosed": true }
+    ],
+    "beforeMCPExecution": [
+      { "command": "python .cursor/hooks/mcp_readonly.py", "timeout": 5, "failClosed": true }
+    ],
+    "afterShellExecution": [
+      { "command": "python .cursor/hooks/audit_log.py" }
+    ],
     "stop": [
       { "command": "python .cursor/hooks/test_fast.py", "timeout": 120, "loop_limit": 3 }
     ]
