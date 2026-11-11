@@ -1,7 +1,7 @@
 import enum
 from datetime import datetime
 
-from sqlalchemy import CheckConstraint, Enum, ForeignKey, Integer, String, func
+from sqlalchemy import Boolean, CheckConstraint, Enum, ForeignKey, Integer, String, func
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.db.base import Base
@@ -40,3 +40,5 @@ class Submission(Base):
     )
     # Підсумковий опублікований бал (ціле 0..100); джерело – Grade.final_score (розд. 8).
     score: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    # Позначка «здано із запізненням», обчислюється при здачі (розд. 10).
+    is_late: Mapped[bool] = mapped_column(Boolean, default=False, server_default="0")

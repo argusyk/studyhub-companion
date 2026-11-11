@@ -36,3 +36,4 @@ class SubmissionOut(BaseModel):
     size_bytes: int
     status: SubmissionStatus
     score: int | None = Field(default=None, ge=0, le=100)
+    is_late: bool = False
