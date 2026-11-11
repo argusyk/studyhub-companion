@@ -1,0 +1,11 @@
+---
+description: "Конвенції фронтенду Next.js"
+globs: apps/web/**/*.tsx
+alwaysApply: false
+---
+
+- Серверні компоненти за замовчуванням; "use client" лише там, де потрібен стан.
+- Дані з API: компонент -> хук з apps/web/lib/hooks -> apps/web/lib/api.ts -> типи з packages/shared.
+  Прямого fetch у компонентах немає.
+- Кожна форма має підписи, фокус із клавіатури й повідомлення про помилки.
+- Зразок сторінки з формою: @apps/web/app/labs/[id]/submit/page.tsx

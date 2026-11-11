@@ -1,0 +1,13 @@
+---
+description: "Конвенції бекенду FastAPI"
+globs: apps/api/**/*.py
+alwaysApply: false
+---
+
+- Шари: routers (HTTP) викликають services (бізнес-логіка), services працюють із
+  SQLAlchemy Session. Окремого шару repositories немає. Роутер не містить запитів до БД.
+- Схеми запитів і відповідей – Pydantic-моделі в app/schemas/, ORM-моделі в app/models/.
+- Усі дати зберігаються як UTC (aware, тип UtcDateTime); перетворення в часовий пояс
+  кафедри виконується лише на межі API.
+- Типи обов'язкові, перевірка mypy має проходити без нових ігнорувань.
+- Зразок ендпоінта: @apps/api/app/routers/submissions.py
