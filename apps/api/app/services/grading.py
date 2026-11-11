@@ -4,6 +4,8 @@ from datetime import datetime
 from decimal import ROUND_HALF_UP, Decimal
 from zoneinfo import ZoneInfo
 
+from app.services.deadlines import is_late, require_aware
+
 PENALTY_PER_DAY = 10  # % за календарну добу (R-07)
 PENALTY_CAP = 30  # % – стеля (R-07)
 
@@ -14,10 +16,6 @@ class CriterionScore:
     weight: Decimal
     score: Decimal
     max_score: Decimal
-
-
-def _d(value) -> Decimal:
-    return value if isinstance(value, Decimal) else Decimal(str(value))
 
 
 def round1(value: Decimal) -> Decimal:
@@ -40,11 +38,10 @@ def raw_score(criteria: list[CriterionScore]) -> Decimal:
 
 
 def late_days(submitted_at: datetime, deadline: datetime, tz: ZoneInfo) -> int:
-    """Кількість календарних діб запізнення за часом кафедри (E2: рівно в дедлайн – 0)."""
-    for name, value in (("submitted_at", submitted_at), ("deadline", deadline)):
-        if value.tzinfo is None or value.utcoffset() is None:
-            raise ValueError(f"{name} must be timezone-aware")
-    if submitted_at <= deadline:
+    """Календарні доби запізнення за часом кафедри; запізнення визначає deadlines.is_late."""
+    require_aware(submitted_at, "submitted_at")
+    require_aware(deadline, "deadline")
+    if not is_late(submitted_at, deadline):
         return 0
     return (submitted_at.astimezone(tz).date() - deadline.astimezone(tz).date()).days
 
