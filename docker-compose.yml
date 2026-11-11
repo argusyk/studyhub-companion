@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: studyhub-db
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-studyhub}
+      POSTGRES_USER: ${POSTGRES_USER:-studyhub}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Скопіюйте .env.example у .env}
+      STUDYHUB_RO_PASSWORD: ${STUDYHUB_RO_PASSWORD:-}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - studyhub_pg:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-studyhub} -d ${POSTGRES_DB:-studyhub}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  studyhub_pg:

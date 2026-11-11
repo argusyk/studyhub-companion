@@ -1,0 +1,37 @@
+# Секрети та локальне оточення
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+apps/api/uploads/
+*.sqlite3
+*.db
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# Cursor: локальні журнали хуків
+.cursor/hooks/audit.log
+
+# Експортні дані в КОРЕНІ репозиторію (дампи, CSV з реальними даними).
+# УВАГА: прив'язка до кореня (/exports/) свідома. Шаблон "exports/" без слеша
+# проігнорував би й код apps/api/app/exports/ (розд. 13).
+/exports/
+/data/exports/
+/dumps/
+fixtures/real/
