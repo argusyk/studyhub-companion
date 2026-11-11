@@ -1,0 +1,21 @@
+# Секрети
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Згенероване й важке
+node_modules/
+.next/
+dist/
+coverage/
+__pycache__/
+*.min.js
+
+# Дані, що можуть містити персональні дані студентів
+fixtures/real/
+/exports/
+/data/exports/
+/dumps/
