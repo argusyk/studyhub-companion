@@ -1,0 +1,7 @@
+{
+  "ok_report": [],
+  "no_conclusions": ["NO_CONCLUSIONS"],
+  "copied_text": ["COPIED"],
+  "empty_report": ["EMPTY"],
+  "injection": ["INJECTION"]
+}
