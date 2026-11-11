@@ -1,0 +1,24 @@
+{
+  "students": [
+    {"id": 101, "name": "Бондаренко Д. С.", "group": "ki-21"},
+    {"id": 102, "name": "Іваненко О. П.", "group": "ki-21"},
+    {"id": 103, "name": "Коваль М. О.", "group": "ki-21"},
+    {"id": 104, "name": "Шевченко А. І.", "group": "ki-21"}
+  ],
+  "labs": [
+    {"id": 1, "num": 1, "deadline": "2026-02-22 23:59"},
+    {"id": 2, "num": 2, "deadline": "2026-03-08 23:59"},
+    {"id": 3, "num": 3, "deadline": "2026-03-01 23:59"}
+  ],
+  "submissions": [
+    {"id": 1001, "student_id": 101, "lab_id": 1, "score": 60, "submitted": "2026-02-22 20:00"},
+    {"id": 1002, "student_id": 102, "lab_id": 1, "score": 95, "submitted": "2026-02-21 10:15"},
+    {"id": 1003, "student_id": 102, "lab_id": 2, "score": 88, "submitted": "2026-03-08 23:59"},
+    {"id": 1004, "student_id": 103, "lab_id": 1, "score": 100, "submitted": "2026-02-20 09:00"},
+    {"id": 1005, "student_id": 103, "lab_id": 2, "score": 91, "submitted": "2026-03-07 18:30"},
+    {"id": 1006, "student_id": 104, "lab_id": 1, "score": 82, "submitted": "2026-02-22 23:00"},
+    {"id": 1007, "student_id": 104, "lab_id": 2, "score": 74, "submitted": "2026-03-10 12:00"},
+    {"id": 1008, "student_id": 101, "lab_id": 3, "score": 70, "submitted": "2026-03-09 08:00"},
+    {"id": 1042, "student_id": 102, "lab_id": 3, "score": 85, "submitted": "2026-03-03 00:30"}
+  ]
+}

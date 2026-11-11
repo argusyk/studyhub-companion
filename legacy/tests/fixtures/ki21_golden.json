@@ -1,0 +1,68 @@
+{
+  "grades": [
+    {
+      "final": 95,
+      "lab": 1,
+      "late_days": 0,
+      "raw": 95,
+      "student": "Іваненко О. П."
+    },
+    {
+      "final": 88,
+      "lab": 2,
+      "late_days": 0,
+      "raw": 88,
+      "student": "Іваненко О. П."
+    },
+    {
+      "final": 76,
+      "lab": 3,
+      "late_days": 1,
+      "raw": 85,
+      "student": "Іваненко О. П."
+    },
+    {
+      "final": 60,
+      "lab": 1,
+      "late_days": 0,
+      "raw": 60,
+      "student": "Бондаренко Д. С."
+    },
+    {
+      "final": null,
+      "lab": 3,
+      "late_days": 7,
+      "raw": 70,
+      "student": "Бондаренко Д. С."
+    },
+    {
+      "final": 100,
+      "lab": 1,
+      "late_days": 0,
+      "raw": 100,
+      "student": "Коваль М. О."
+    },
+    {
+      "final": 91,
+      "lab": 2,
+      "late_days": 0,
+      "raw": 91,
+      "student": "Коваль М. О."
+    },
+    {
+      "final": 82,
+      "lab": 1,
+      "late_days": 0,
+      "raw": 82,
+      "student": "Шевченко А. І."
+    },
+    {
+      "final": 67,
+      "lab": 2,
+      "late_days": 1,
+      "raw": 74,
+      "student": "Шевченко А. І."
+    }
+  ],
+  "group": "ki-21"
+}
